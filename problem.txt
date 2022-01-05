@@ -1,0 +1,2 @@
+1.内存太小导致numpy 和 scipy 无法构建轮子 也没有合适架构的轮子可以下载 所以docker无法搭建
+  用与arm架构的macbook M1 搭建docker并将搭建的docker环境移植到raspiberry上

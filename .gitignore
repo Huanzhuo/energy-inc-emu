@@ -1,0 +1,33 @@
+__pycache__/
+.vscode
+# .gitignore
+.mypy_cache/
+*.py[cod]
+*$py.class
+
+.vagrant/
+emulation/build/
+*.so
+# emulator/S.npy
+# app/pICA-emu/MIMII/
+.DS_Store
+emulator/measurement/*.csv
+emulator/measurement/*.pdf
+# emulator/measurement/*/*.csv
+emulator/measurement/*/*.pdf
+emulator/measurement/plot/*.pdf
+
+
+saxs.pkl
+saxsNew.pkl
+simplecoinstd.py
+simplecoinlite.py
+
+# emulator/measurement/*/*/*.csv
+
+
+emulator/MIMII/saxs.pkl
+emulator/MIMII/saxsNew.pkl
+
+autocmd.py
+temp.autocmdcfg
