@@ -68,7 +68,7 @@ The  **[website of Adafruit](https://learn.adafruit.com/adafruit-ina219-current-
 
 ### Part3. Measure the power of the Raspberry
 
-If we run pICA on the Raspberry, we can get file named ``` time_vnf_number.csv ``` in the folder. And in the same time we run ``` read_power.py ``` on PC, we can also get a file named ``` VNF_number ```. When the measure finished, we should put this two file in a same folder and run ``` energy.py ``` in the folder. Then we can get the power and energy of the Raspberry Pi. And with ```plot.py``` we can get the boxplot of the energy result.
+If we run pICA on the Raspberry Pi, we can get file named ``` time_vnf_number.csv ``` in the folder. And in the same time we run ``` read_power.py ``` on PC, we can also get a file named ``` VNF_number ```. When the measure finished, we should put this two file in a same folder and run ``` energy.py ``` in the folder. Then we can get the power and energy of the Raspberry Pi. And with ```plot.py``` we can get the boxplot of the energy result.
 
 Tips: Make sure that the csv file has just 2 columns and m rows and every element is not lacked.
 
