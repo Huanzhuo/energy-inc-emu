@@ -1,3 +1,4 @@
+# This is using for read data from the Arduino chip
 import time
 import serial
 ser = serial.Serial(
@@ -14,7 +15,7 @@ while True:
     ct = time.ctime(t)
     print(ct, ':')
     print(data)
-    f = open('vnf_1.csv', 'a')
+    f = open('vnf_1.csv', 'a')#save the result
     f.writelines(ct)
     f.writelines(',')
     f.writelines(data.decode('utf-8'))

@@ -74,7 +74,21 @@ Tips: Make sure that the csv file has just 2 columns and m rows and every elemen
 
 ## Result
 
-The Result is under the folder Result. Every work mode measure for 80 times. And plot the energy with box plot.
-![avatar](Result/cf.png)
+The Result is under the folder Result.
 
-![avatar](Result/sf.png)
+The Data_Beta is using data_id_7 to transmit and Data_old is using data_id_9
+
+ Every work mode measure for 50 times. And plot the data with box plot.
+![avatar](Result/Image/Total%20Energy.png)
+
+We can notice that in the first picture, in the CF processing model, the energy consumed in CF working mode will be less than in SF mode. This is mainly because the total time in CF working mode is smaller than in SF mode. A point that cannot be ignored is that reducing time reduces the essential energy consumption (Energy consumption of Operating System) required for data transmission. If we pick k = 5, for example, in the CF working model, the median energy consumption is 169.7 J, but the median energy consumption is 212.9 J in the SF working model. 20.2\% reduced the total energy consumption. This also proves that In-Network Computing can indeed achieve energy savings. 
+
+We can also observe that the total energy consumption decreases with increasing k in the CF working mode. When k=1, the maximum total energy consumption is 226.0J; in contrast, when k=5, the minimum total energy consumption is 169.5J, which means energy consumption has decreased by 25 \%. But the energy consumption in SF mode is variable between 210J and 230J when k is different, and there is no apparent trend.
+
+![avatar](Result/Image/energy_pICA.png)
+
+As shown in the the 2nd picture, the energy consumption of pICA in CF mode will be lower than that of SF mode. The reason is that the calculation required in CF mode is less than SF mode.
+
+![avatar](Result/Image/power_pICA.png)
+
+We can also observe that the average power in CF mode is higher than that in SF mode from the 3rd picture. In the CF working model, the task that the server should complete is distributed to VNF, and the VNF itself needs to consume energy, which means, in CF working mode, more data processing is done per unit time. Hence, the power of the CF working model is higher.
